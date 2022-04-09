@@ -214,3 +214,14 @@ footer {
 /* Background Position */
 .bg-pos-t-l { background-position: 10% 10%; }
 .bg-pos-b-r { background-position: 85% 85%; }
+
+
+@media (max-width: 36em) {
+
+    .bg-map.tall-xs {
+        min-height: 40vh;
+        max-width: 80vw;
+    }    
+
+    .margin-xs { margin-bottom: -1rem;}
+}
