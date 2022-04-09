@@ -1,15 +1,23 @@
 /*  NOTES
 - fonts:
     - Didot - Regular (headings)
-    - Baskerville - Regular (small text)
-    - Proxima Nova - Medium
+    - Baskerville - Regular (body text) 
+    - Lato - Links and specific elements
 - Colors:
     - beige - F8F6F4
-    - pink - FFA995
+    - pink - f59186
 - Map: [https://snazzymaps.com/style/115413/light-and-beige](https://snazzymaps.com/style/115413/light-and-beige)
 
-*/
 
+- change the background images
+- typography styles
+    - general styles
+    - featured text (changing color of the text)
+    - font-size
+- button styles
+- image styles (round edges)
+
+*/
 
 
 * {
@@ -21,20 +29,20 @@
 img { max-width: 100%; }
 
 /*  Temporary Styles */
-
+/*
 * {
     padding: 0.5rem;
     border: 2px solid rgb(200,200,200);
-}
-
+}*/
+/*
 html, 
 body {
     border: none;
-}
-
+}*/
+/*
 h1,h2,h3,h4,h5,h6,p, a {
     border: 2px solid rgb(179, 84, 84);
-}
+} */
 
 
 /* Re-usable Utiity Classes  */
@@ -47,16 +55,21 @@ h1,h2,h3,h4,h5,h6,p, a {
 
 
 .padded    { padding: 5%;    }
-.padded-1  { padding: 1rem;  }
-.padded-2  { padding: 2rem;  }
+.padded-1,
+.grid.padded-1  { padding: 1rem;  }
+
+.padded-2,
+.grid.padded-2 { padding: 2rem;  }
 
 .margin-b-0 { margin-bottom: 0; }
+.margin-bottom {margin-bottom: 3rem;}
 
 .bg-light { background-color: #F8F6F4;  }
 .bg-featured { background-color: #018ca2;  }
 .bg-dark     { background-color: #24282B;  }
 
 .light-text { color: white; } 
+.featured-text { color: #f59186; }
 
 
 .left   { text-align: left; }
@@ -66,7 +79,83 @@ h1,h2,h3,h4,h5,h6,p, a {
 
 /* General typography & universal styles  */
 
+body {
+    font-family: 'Baskervville', serif;
+    color: rgb(50,40,40)
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Didot', serif;
+    line-height: 1.1;
+    margin-bottom: 1.3rem;
+    font-weight: normal;
+
+}
+
+h1 { font-size: 5rem;}
+h2 { font-size: 2.5rem;}
+h3 { font-size: 2rem;}
+h4 {
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.4;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child {
+    margin-bottom: 0;
+}
+
+.text-lg {font-size: 3.5rem;}
+.text-xl {font-size: 4.5rem;}
+.text-xxl {font-size: 10rem;}
+
+.text-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+}
+
+.button {
+    color: inherit;
+    border: 1px solid #f59186;
+    border-radius: 2rem;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    font-family: 'Baskervville', serif;
+}
+
+ul { margin-left: 1rem; }
+li { padding-left: 0.5rem; }
+
+
 /* Header & Footer */
+
+footer {
+    padding-bottom: 1.5rem;
+    color: rgb(90,90,90);
+}
 
 /* Images & Background Images */
 
@@ -77,6 +166,31 @@ h1,h2,h3,h4,h5,h6,p, a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.bg-stone {
+    background-image: url('/images/stone.png');
+}
+
+.bg-leaves {
+    background-image: url('/images/zen-studio-1.jpg');
+    background-position: 50% 32%;
+}
+
+.bg-studio {
+    background-image: url('/images/zen-studio-3.jpg');
+}
+
+.bg-map {
+    background-image: url('/images/light-colored-map.png');
+}
+
+.shape-teardrop {
+    border-radius: 20rem 20rem 0 20rem;
+}
+
+.shape-window {
+    border-radius: 20rem 20rem 0 0;
 }
 
 /* Aspect Ratio */
