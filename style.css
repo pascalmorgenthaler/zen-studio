@@ -18,21 +18,23 @@
     box-sizing: border-box;
 }
 
+img { max-width: 100%; }
+
 /*  Temporary Styles */
 
-/* * {
+* {
     padding: 0.5rem;
     border: 2px solid rgb(200,200,200);
-} */
+}
 
-/* html, 
+html, 
 body {
     border: none;
-} */
+}
 
-/* h1,h2,h3,h4,h5,h6,p, a {
+h1,h2,h3,h4,h5,h6,p, a {
     border: 2px solid rgb(179, 84, 84);
-} */
+}
 
 
 /* Re-usable Utiity Classes  */
@@ -50,7 +52,7 @@ body {
 
 .margin-b-0 { margin-bottom: 0; }
 
-
+.bg-light { background-color: #F8F6F4;  }
 .bg-featured { background-color: #018ca2;  }
 .bg-dark     { background-color: #24282B;  }
 
@@ -67,3 +69,34 @@ body {
 /* Header & Footer */
 
 /* Images & Background Images */
+
+
+.bg-image {
+    background-color: rgb(240,240,240);
+    background-image: url('/images/zen-studio-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Aspect Ratio */
+.portrait-tall { padding-bottom: 175%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+/* Background Position */
+.bg-pos-t-l { background-position: left top; }
+.bg-pos-b-r { background-position: right bottom; }
+
+
+/* Background Position */
+.bg-pos-t-l { background-position: 10% 10%; }
+.bg-pos-b-r { background-position: 85% 85%; }
