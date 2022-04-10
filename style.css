@@ -28,6 +28,11 @@
 
 img { max-width: 100%; }
 
+[class*="grid-"] {
+    margin: 0;
+    padding: 0;
+}
+
 /*  Temporary Styles */
 /*
 * {
@@ -155,6 +160,9 @@ li { padding-left: 0.5rem; }
 footer {
     padding-bottom: 1.5rem;
     color: rgb(90,90,90);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #f59186;
 }
 
 /* Images & Background Images */
@@ -215,6 +223,41 @@ footer {
 .bg-pos-t-l { background-position: 10% 10%; }
 .bg-pos-b-r { background-position: 85% 85%; }
 
+/*
+@media (max-width: 36em) 	Max 576px 	_xs-*
+@media (max-width: 48em) 	Max 768px 	_sm-*
+@media (max-width: 64em) 	Max 1024px 	_md-*
+@media (max-width: 80em) 	Max 1280px 	_lg-*
+*/
+
+
+
+
+
+@media (max-width: 64em) {
+
+    .text-xxl { font-size: 8rem; }
+
+}
+
+
+@media (max-width: 48em) {
+
+    .text-xxl { font-size: 6.5rem; }
+
+    .text-lg { font-size: 2.5rem; }
+
+    .sm-block { display: block; }
+
+    .bg-leaves {
+        background-image: url('/images/leaves-light-mobile.png');
+        background-position: 50% 32%;
+    }
+
+    .text-center-sm { text-align: center; }
+
+}
+
 
 @media (max-width: 36em) {
 
@@ -224,4 +267,8 @@ footer {
     }    
 
     .margin-xs { margin-bottom: -1rem;}
+
+    .text-xxl { font-size: 3.5rem; }
+
+
 }
